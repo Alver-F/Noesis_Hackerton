@@ -1,3 +1,153 @@
-h1{
-    font-size:10px;
+.sidebar {
+    width: 60px;
+    background-color: #f1eaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: fixed;
+    height: 300px;
+    border-radius: 10px;
+    top: 170px;
+    left: 140px;
+  }
+  
+  .sidebar div {
+    margin: 15px 0;
+  }
+  
+  .sidebar img.nav {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    filter: invert(100%);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .sidebar img:hover {
+    transform:scale(1.2);
+  }
+
+.red-box{
+    height:55%;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: rgb(157, 37, 37);
+}
+.title-head{
+    font-size: 25px;
+    color:white;
+    font-family: inknut antiqua;
+    margin-left: 120px;
+    margin-right: 20px;
+}
+
+.search-bar{
+    width: 625px;
+    padding: 5px;
+    font-size: 11px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-bar:focus{
+    outline: none;
+}
+
+#search-icon{
+    position: absolute;
+    left: 950px;
+    top:23px;
+    cursor:pointer;
+}
+
+.post-box{
+    height:90px;
+    position: fixed;
+    top: 70px;
+    left: 353px;
+    right:380px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.user-icon{
+    width:36px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+.search-bar1{
+    background-color: rgb(194, 194, 194);
+    width: 550px;
+    padding: 5px;
+    font-size: 11px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 10px;
+}
+
+.search-bar1:focus{
+    outline: none;
+}
+
+.post-text{
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+i{
+    cursor: pointer;
+}
+
+.group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 12px;
+}
+
+.posted-box{
+    height:390px;
+    position: fixed;
+    top: 200px;
+    left: 353px;
+    right:380px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.user-card{
+    background-color: rgb(222, 208, 208);
+    padding: 5px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.username{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.community{
+    height:540px;
+    position: fixed;
+    top: 72px;
+    left: 1050px;
+    right:35px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
 }
