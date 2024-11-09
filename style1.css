@@ -1,3 +1,8 @@
+
+/* 
+for rights  page */
+
+
 .sidebar {
     width: 60px;
     background-color: #f1eaea;
@@ -6,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    position: fixed;
+    position: absolute;
     height: 300px;
     border-radius: 10px;
     top: 170px;
@@ -31,7 +36,7 @@
 
 .red-box{
     height:55%;
-    position: fixed;
+    position: absolute;
     top:0;
     left: 0;
     right: 0;
@@ -66,96 +71,11 @@
     cursor:pointer;
 }
 
-.post-box{
-    height:90px;
-    position: fixed;
-    top: 70px;
-    left: 353px;
-    right:380px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-}
-
-.user-icon{
-    width:36px;
-    height: 35px;
-    border-radius: 15px;
-}
-
-.search-bar1{
-    background-color: rgb(194, 194, 194);
-    width: 550px;
-    padding: 5px;
-    font-size: 11px;
-    height: 30px;
-    margin-top: 5px;
-    border-radius: 20px;
-    border: none;
-    margin-left: 10px;
-}
-
-.search-bar1:focus{
-    outline: none;
-}
-
-.post-text{
-    font-size: 10px;
-    font-weight: bold;
-    margin-right: 5px;
-    cursor: pointer;
-}
-
-i{
-    cursor: pointer;
-}
-
-.group{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    margin-top: 12px;
-}
-
-.posted-box{
-    height:390px;
-    position: fixed;
-    top: 200px;
-    left: 353px;
-    right:380px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-}
-
-.user-card{
-    background-color: rgb(222, 208, 208);
-    padding: 5px;
-    width: 150px;
-    border-radius: 10px;
-}
-
-.username{
-    font-size: 10px;
-    font-weight: bold;
-}
-
-.community{
-    height:540px;
-    position: fixed;
-    top: 72px;
-    left: 1050px;
-    right:35px;
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-    padding: 30px;
-}
 
 .content1{
     width: 550px;
     height:200px;
-    position: fixed;
+    position: absolute;
     top: 150px;
     left: 250px;
     right:710px;
@@ -165,19 +85,64 @@ i{
     font-family: inknut antiqua;
 }
 
+.content3{
+    width: 550px;
+    height:200px;
+    position: absolute;
+    top: 1200px;
+    left: 250px;
+    right:710px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: inknut antiqua;
+    z-index: 7;
+}
+
+.content2{
+    width: 550px;
+    height:200px;
+    position: absolute;
+    top: 90px;
+    right:70px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: inknut antiqua;
+}
+
 .img1{
     width: 310px;
-    height: 420px;
+    height: 490px;
     object-fit: cover;
     position: absolute;
     right: 140px;
     top:100px
 }
+.img3{
+    width: 310px;
+    height: 490px;
+    object-fit: cover;
+    position: absolute;
+    right: 140px;
+    top:350px
+}
+
 .img2{
     width: 310px;
-    height: 420px;
+    height: 490px;
     object-fit: cover;
     position: absolute;
     left: 280px;
-    top:450px
+    top:430px;
+    z-index:3;
+}
+
+.red-box1{
+    height:75%;
+    position: absolute;
+    top:630px;
+    left: 0;
+    right: 0;
+    background-color: rgb(157, 37, 37);
 }
