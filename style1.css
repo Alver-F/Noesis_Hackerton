@@ -2,37 +2,51 @@
 /* 
 for rights  page */
 
-
 .sidebar {
     width: 60px;
     background-color: #f1eaea;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    position: absolute;
+    padding: 20px 0;
+    position: fixed;
     height: 300px;
-    border-radius: 10px;
-    top: 170px;
+    top: 200px;
     left: 140px;
-  }
+    border-radius: 10px;
+    z-index: 10;
+    }
+    
+    .sidebar div {
+      margin: 15px 0;
+    }
+    
+    .sidebar img.nav {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      filter: invert(100%);
+      transition: transform 0.2s ease-in-out;
+    }
   
-  .sidebar div {
-    margin: 15px 0;
-  }
+    .sidebar .section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px; }
   
-  .sidebar img.nav {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    filter: invert(100%);
-    transition: transform 0.2s ease-in-out;
-  }
+    .sidebar img:hover {
+      transform:scale(1.2);
+    }
+   
   
-  .sidebar img:hover {
-    transform:scale(1.2);
-  }
+  .sidebar .bottom-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: auto;
+  } 
+  
 
 .red-box{
     height:55%;
