@@ -194,6 +194,39 @@ i{
 }
 
 
+
+/* Sidebar */
+.sidebar {
+    width: 60px;
+    background-color: #f1eaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    position: fixed;
+    height: vh;
+    border-radius: 10px;
+    top: 100px;
+    left: 150px;
+  }
+  
+  .sidebar div {
+    margin: 15px 0;
+  }
+  
+  .sidebar img.nav {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    filter: invert(100%);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .sidebar img:hover {
+    transform:scale(1.2);
+  }
+
+
   /*conselling page*/
   #con-title{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -365,6 +398,7 @@ i{
   margin-left: 300px;
 }
 /*course end*/
+
 
 .content1{
     width: 550px;
