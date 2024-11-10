@@ -19,6 +19,9 @@ def councellingpage():
 def coursespage():
     return render_template('courses.html')
 
+#test
+
+
 
 if '__main__' == __name__:
     app.run(debug=True, port=5000)
