@@ -34,7 +34,34 @@
   .sidebar img:hover {
     transform:scale(1.2);
   }
- 
+  .sidebar a {
+    position: relative;
+    display: inline-block;
+}
+
+.sidebar a:hover::after {
+    content: attr(data-tooltip); /* Display the tooltip text */
+    position: absolute;
+    left: 35px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    transform: translateY(-50%);
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s ease;
+}
+
+.sidebar a::after {
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+}
 
 .sidebar .bottom-section {
     display: flex;
@@ -261,37 +288,26 @@ i{
     font-size:14px;}
   /*conselling page end*/
 
-.content1{
-    width: 550px;
-    height:200px;
-    position: fixed;
-    top: 150px;
-    left: 250px;
-    right:710px;
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
-    font-family: inknut antiqua;
-}
+
+
+/*course*
 
 .img1{
-    width: 310px;
-    height: 420px;
-    object-fit: cover;
-    position: absolute;
-    right: 140px;
-    top:100px
+  width: 310px;
+  height: 420px;
+  object-fit: cover;
+  position: absolute;
+  right: 140px;
+  top:100px
 }
 .img2{
-    width: 310px;
-    height: 420px;
-    object-fit: cover;
-    position: absolute;
-    left: 280px;
-    top:450px
-}
-
-/*course*/
+  width: 310px;
+  height: 420px;
+  object-fit: cover;
+  position: absolute;
+  left: 280px;
+  top:450px
+}*/
 
 #course-block{
   position: relative;
