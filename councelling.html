@@ -59,14 +59,30 @@
       <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="card p-4 shadow form-card">
           <h6 class="form-title">I want to communicate through...</h6>
-          <!-- Communication Method Buttons -->
-          <div class="d-flex flex-wrap gap-3 my-3">
-            <button class="btn btn-communication ">Chat</button>
-            <button class="btn btn-communication">Video Call</button>
-            <button class="btn btn-communication">Meeting</button>
-            <button class="btn btn-communication">Email</button>
-            <button class="btn btn-communication">Other</button>
-          </div>
+          <!-- Communication Options (Checkbox Buttons) -->
+    <div class="checkbox-buttons">
+      <label class="checkbox-button">
+        <input type="checkbox" name="communication" value="chat">
+        <span>Chat</span>
+      </label>
+      <label class="checkbox-button">
+        <input type="checkbox" name="communication" value="video-call">
+        <span>Video Call</span>
+      </label>
+      <label class="checkbox-button">
+        <input type="checkbox" name="communication" value="meeting">
+        <span>Meeting</span>
+      </label>
+      <label class="checkbox-button">
+        <input type="checkbox" name="communication" value="email">
+        <span>Email</span>
+      </label>
+      <label class="checkbox-button">
+        <input type="checkbox" name="communication" value="other">
+        <span>Other</span>
+      </label>
+    </div>
+
           <!-- Input Fields -->
           <form>
             <div class="mb-3">

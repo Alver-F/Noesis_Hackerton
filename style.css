@@ -152,7 +152,7 @@ i{
     padding: 30px;
 }
 
-<<<<<<< HEAD
+
 /* Sidebar */
 .sidebar {
     width: 60px;
@@ -211,31 +211,42 @@ i{
     color: #333;
     font-weight: bold;
     text-align: left;
+    margin-top:10px ;
   }
   
-  /* Communication Buttons */
-.btn-communication {
-    border: 1px solid #555; 
-    background-color: #f8f8f8;
-    color: #a00000;
-    border-radius: 8px;
-    padding: 9px 10px;
-    font-size: 14px;
+ /* Checkbox Buttons */
+.checkbox-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-button {
+    display: inline-block;
+  }
+  
+  .checkbox-button input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkbox-button span {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s ease;
-    margin-right: 5px;
+    color: #666;
+    font-weight: bold;
   }
   
-  .btn-communication:hover {
+  .checkbox-button input[type="checkbox"]:checked + span {
     background-color: #a00000;
-    color:#f8f8f8;
-  }
-  
-  .btn-communication.active {
-    background-color: #a00000;
-    color: #fff;
+    color: white;
     border-color: #a00000;
   }
+  
   
   
   /* Input Fields */
@@ -275,7 +286,7 @@ i{
   .send-text {
     font-size:14px;}
   /*conselling page end*/
-=======
+
 .content1{
     width: 550px;
     height:200px;
@@ -295,7 +306,7 @@ i{
     object-fit: cover;
     position: absolute;
     right: 140px;
-    top:100px
+    top:100px;
 }
 .img2{
     width: 310px;
@@ -303,6 +314,6 @@ i{
     object-fit: cover;
     position: absolute;
     left: 280px;
-    top:450px
+    top:450px;
 }
->>>>>>> bd5ffe85aca6889e82c1019d0af598e17ce36e38
+
