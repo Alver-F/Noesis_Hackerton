@@ -152,6 +152,7 @@ i{
     padding: 30px;
 }
 
+<<<<<<< HEAD
 /* Sidebar */
 .sidebar {
     width: 60px;
@@ -274,3 +275,34 @@ i{
   .send-text {
     font-size:14px;}
   /*conselling page end*/
+=======
+.content1{
+    width: 550px;
+    height:200px;
+    position: fixed;
+    top: 150px;
+    left: 250px;
+    right:710px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: inknut antiqua;
+}
+
+.img1{
+    width: 310px;
+    height: 420px;
+    object-fit: cover;
+    position: absolute;
+    right: 140px;
+    top:100px
+}
+.img2{
+    width: 310px;
+    height: 420px;
+    object-fit: cover;
+    position: absolute;
+    left: 280px;
+    top:450px
+}
+>>>>>>> bd5ffe85aca6889e82c1019d0af598e17ce36e38
