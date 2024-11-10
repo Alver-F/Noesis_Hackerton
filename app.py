@@ -19,7 +19,6 @@ def councellingpage():
 def coursespage():
     return render_template('courses.html')
 
-#test
 
 
 
