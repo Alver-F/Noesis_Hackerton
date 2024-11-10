@@ -1,20 +1,16 @@
-h1{
-    font-size:10px;
-}
-
-/* Sidebar */
 .sidebar {
     width: 60px;
     background-color: #f1eaea;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 0;
     position: fixed;
-    height: vh;
+    height: 300px;
     border-radius: 10px;
-    top: 100px;
-    left: 20px;
+    top: 170px;
+    left: 140px;
   }
   
   .sidebar div {
@@ -32,3 +28,249 @@ h1{
   .sidebar img:hover {
     transform:scale(1.2);
   }
+
+.red-box{
+    height:55%;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: rgb(157, 37, 37);
+}
+.title-head{
+    font-size: 25px;
+    color:white;
+    font-family: inknut antiqua;
+    margin-left: 120px;
+    margin-right: 20px;
+}
+
+.search-bar{
+    width: 625px;
+    padding: 5px;
+    font-size: 11px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-bar:focus{
+    outline: none;
+}
+
+#search-icon{
+    position: absolute;
+    left: 950px;
+    top:23px;
+    cursor:pointer;
+}
+
+.post-box{
+    height:90px;
+    position: fixed;
+    top: 70px;
+    left: 353px;
+    right:380px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.user-icon{
+    width:36px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+.search-bar1{
+    background-color: rgb(194, 194, 194);
+    width: 550px;
+    padding: 5px;
+    font-size: 11px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 10px;
+}
+
+.search-bar1:focus{
+    outline: none;
+}
+
+.post-text{
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+i{
+    cursor: pointer;
+}
+
+.group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 12px;
+}
+
+.posted-box{
+    height:390px;
+    position: fixed;
+    top: 200px;
+    left: 353px;
+    right:380px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.user-card{
+    background-color: rgb(222, 208, 208);
+    padding: 5px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.username{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.community{
+    height:540px;
+    position: fixed;
+    top: 72px;
+    left: 1050px;
+    right:35px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 60px;
+    background-color: #f1eaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    position: fixed;
+    height: vh;
+    border-radius: 10px;
+    top: 100px;
+    left: 150px;
+  }
+  
+  .sidebar div {
+    margin: 15px 0;
+  }
+  
+  .sidebar img.nav {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    filter: invert(100%);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .sidebar img:hover {
+    transform:scale(1.2);
+  }
+
+  /*conselling page*/
+  #con-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    color: beige;
+    position: relative;
+    font-size: 50px;
+  }
+  
+  #con-block{
+    position: relative;
+    
+  }
+  /*form*/
+  .form-card {
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Form Title */
+  .form-title {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Communication Buttons */
+.btn-communication {
+    border: 1px solid #555; 
+    background-color: #f8f8f8;
+    color: #a00000;
+    border-radius: 8px;
+    padding: 9px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-right: 5px;
+  }
+  
+  .btn-communication:hover {
+    background-color: #a00000;
+    color:#f8f8f8;
+  }
+  
+  .btn-communication.active {
+    background-color: #a00000;
+    color: #fff;
+    border-color: #a00000;
+  }
+  
+  
+  /* Input Fields */
+  .form-input {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 8px 0;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-bottom: 2px solid #a00000;
+    box-shadow: none;
+  }
+  
+  /* Submit Button */
+  .btn-send {
+    background-color: #a00000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: 0.3s ease;
+  }
+  
+  .btn-send:hover {
+    background-color: #c21818;
+  }
+  
+  /* Icons */
+  .send-text {
+    font-size:14px;}
+  /*conselling page end*/

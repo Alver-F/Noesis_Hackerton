@@ -6,21 +6,18 @@
     <title>councelling</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
 </head>
-<body>
-    <div class="container-fluid p-3">
-        <nav class="navbar navbar expand bg-danger">
-            <ol class="navbar-nav">
-                <li class="nav-item">
-                    <h3 style="font-family: inknut antiqua;">HERSAFE</h3>
-                </li>
-                <li class="nav-item">
-
-                </li>
-            </ol>
-        </nav>
+<body style="background-color: rgb(176, 174, 174);">
+  <div class="red-box">
+    <div class="container mt-3 d-flex">
+        <span class="title-head">Her Safe</span>
+        <input type="text" placeholder="Search" class="search-bar">
+        <i class="bi bi-search" id="search-icon"></i>
     </div>
+
     <div class="sidebar">
         <div>
           <a href="#">
@@ -43,5 +40,58 @@
           </a>
         </div>
     </div>
+
+    <div class="container mt-5 mr-5 " id="con-block">
+      <div class="row gy-3 align-item-left ">
+        <div class="col-lg-7 px-lg-6" id="con-col">
+          <div class="about-card">
+        <h1 id="con-title">Join Counselling Session</h1>
+        <p style="color: bisque;">Counseling supports women's safety by offering emotional strength,
+           awareness of rights, and strategies to handle unsafe situations.
+            It empowers women to recognize harmful behaviors, build resilience,
+           and access resources. This guidance fosters confidence and control, 
+           helping prevent violence and ensuring a safer,
+          more secure environment for women.</p>  
+          <img src="/images/councelling.png" width="80%" height="80%">
+      </div>
+      </div>
+      <div class="col">
+      <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4 shadow form-card">
+          <h6 class="form-title">I want to communicate through...</h6>
+          <!-- Communication Method Buttons -->
+          <div class="d-flex flex-wrap gap-3 my-3">
+            <button class="btn btn-communication ">Chat</button>
+            <button class="btn btn-communication">Video Call</button>
+            <button class="btn btn-communication">Meeting</button>
+            <button class="btn btn-communication">Email</button>
+            <button class="btn btn-communication">Other</button>
+          </div>
+          <!-- Input Fields -->
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your name</label>
+              <input type="text" id="name" class="form-control form-input" placeholder="Your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your email</label>
+              <input type="email" id="email" class="form-control form-input" placeholder="Your email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your message</label>
+              <textarea id="message" rows="3" class="form-control form-input" placeholder="Your message"></textarea>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-send w-100">
+              <span class="send-text">Send Message</span>
+              <i class="bi bi-send-fill"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+      <!-- Bootstrap JS -->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    
 </body>
 </html>
