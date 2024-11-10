@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Stored Data</title>
+</head>
+<body>
+
+    <h2>Stored Data:</h2>
+
+    <div id="data-display"></div> <!-- This is where the stored data will be displayed -->
+
+    <script>
+        window.onload = function() {
+            // Get the stored JSON string from localStorage
+            const myJSON = localStorage.getItem('value');
+
+            if (myJSON) {
+                // Parse the JSON string into an object
+                const myObj = JSON.parse(myJSON);
+
+                // Get the 'postvalue' from the object and display it
+                const displayText = `Stored Post Value: ${myObj.postvalue}`;
+
+                // Display the value on the page
+                document.getElementById('data-display').textContent = displayText;
+            } else {
+                // If no data is found, display a message
+                document.getElementById('data-display').textContent = 'No data found in localStorage.';
+            }
+        }
+    </script>
+
+</body>
+</html>

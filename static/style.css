@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
-  position: fixed;
+  position: absolute;
   height: 300px;
   top: 200px;
   left: 140px;
@@ -111,7 +111,7 @@
     height:90px;
     position: fixed;
     top: 70px;
-    left: 353px;
+    left: 330px;
     right:380px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
@@ -126,7 +126,7 @@
 
 .search-bar1{
     background-color: rgb(194, 194, 194);
-    width: 550px;
+    width: 530px;
     padding: 5px;
     font-size: 11px;
     height: 30px;
@@ -162,12 +162,23 @@ i{
 .posted-box{
     height:390px;
     position: fixed;
-    top: 200px;
-    left: 353px;
+    top: 180px;
+    left: 330px;
     right:380px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     padding: 10px;
+}
+
+.posted-box1{
+  height:390px;
+  position: absolute;
+  top: 600px;
+  left: 330px;
+  right:380px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
 }
 
 .user-card{
@@ -193,38 +204,6 @@ i{
     padding: 30px;
 }
 
-
-
-/* Sidebar */
-.sidebar {
-    width: 60px;
-    background-color: #f1eaea;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-    position: fixed;
-    height: vh;
-    border-radius: 10px;
-    top: 100px;
-    left: 150px;
-  }
-  
-  .sidebar div {
-    margin: 15px 0;
-  }
-  
-  .sidebar img.nav {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    filter: invert(100%);
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .sidebar img:hover {
-    transform:scale(1.2);
-  }
 
 
   /*conselling page*/

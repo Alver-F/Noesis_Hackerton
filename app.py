@@ -19,6 +19,10 @@ def councellingpage():
 def coursespage():
     return render_template('courses.html')
 
+@app.route('/view')
+def viewpage():
+    return render_template('view.html')
+
 
 
 
